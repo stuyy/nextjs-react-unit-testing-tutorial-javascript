@@ -21,7 +21,7 @@ describe('LoginForm', () => {
   it('should login user and display error message', async () => {
     server.use(
       rest.post('/api/auth', (req, res, ctx) => {
-        return res(ctx.json({}));
+        return res(ctx.status(400));
       })
     );
     render(<LoginForm />);
