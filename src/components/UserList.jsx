@@ -12,7 +12,12 @@ export const UserList = () => {
   return (
     <div>
       {users.length > 0 ? (
-        users.map((user) => <div key={user.id}>{user.username}</div>)
+        <div>
+          <h1>List Of Users</h1>
+          {users.map((user) => (
+            <div key={user.id}>{user.username}</div>
+          ))}
+        </div>
       ) : (
         <span>No Users</span>
       )}

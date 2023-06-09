@@ -1,4 +1,5 @@
 'use client';
+import { LoginForm } from '@/components/LoginForm';
 import { UserList } from '@/components/UserList';
 import { UserProfile } from '@/components/UserProfile';
 import { useState } from 'react';
@@ -42,6 +43,7 @@ export default function Home() {
         isEmailVerified={false}
       />
       <UserList />
+      <LoginForm />
     </main>
   );
 }
